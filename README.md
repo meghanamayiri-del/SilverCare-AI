@@ -1,59 +1,45 @@
-SilverCare AI — Healthcare Intelligence System
-SilverCare AI is an AI-powered healthcare intelligence assistant designed to convert complex and unstructured medical reports into clear, structured, and easy-to-understand health summaries.
-It helps users quickly interpret laboratory reports using Generative AI and provides structured insights for better understanding of health conditions.
+# SilverCare AI
 
-Features : 
-1. Multi-Format Input Support
-Accepts both smartphone-captured images and hospital PDF reports for analysis.
-2. Patient Profile Validation Engine
-Automatically extracts and validates patient details such as age and gender to ensure accurate interpretation and reduce misreading risks.
-3. AI Report Analyzer
-Converts raw medical reports into structured insights with clear summaries and key highlights.
-4. Interactive Archives
-Stores and tracks historical patient reports securely for future reference and comparison.
+SilverCare AI is an AI-powered healthcare intelligence assistant built to bring structural clarity, safety, and insight to family caregiving. Developed under the guidance of Sai Satish Sir (Indian Servers), this platform converts complex, unstructured clinical diagnostic reports into highly readable, bite-sized health snapshots for everyday families.
 
-Tech Stack : 
-Python
-Streamlit
-Google Gemini API
-SQLite3
-Pillow
-CSS3
+Instead of relying on fragile, error-prone traditional OCR systems, SilverCare AI utilizes a state-of-the-art vision-language engine to process both digital documents and casual smartphone snapshots seamlessly.
 
-Project Structure :
-SilverCare-AI/
-│── app.py
-│── requirements.txt
-│── silvercare_records.db
-│── assets/
-│── README.md
+---
 
-Getting Started :
+## Key Features
 
-1. Clone the repository
-git clone https://github.com/your-username/SilverCare-AI.git
-2. Install dependencies
-pip install -r requirements.txt
-3. Run the application
-streamlit run app.py
+* **AI Report Analyzer (Powered by Google Gemini)**
+    Utilizes advanced multi-modal native vision-language processing to convert messy, unstructured medical reports into organized cards, key metric trends, and plain-English summaries.
+* **Multi-Format Input Support**
+    Seamlessly ingests digital hospital PDFs as well as hand-held smartphone camera photos of physical lab sheets without requiring pre-cropping or alignment.
+* **Profile Integrity Engine**
+    A proactive safety layer that instantly catches demographic mismatches (such as age or gender variances) between the caregiver's user input and the document text canvas to prevent critical medical mix-ups.
+* **Interactive Historical Archives**
+    Securely commits, logs, and tracks historical patient evaluation histories over time, allowing caregivers to look back at past records instantly.
 
-Use Case :
-Easy understanding of medical reports
-Quick health summary for families
-Reduces confusion in lab reports
-Helps in long-term patient record tracking
+---
 
-Future Improvements
-Cloud database integration
-Doctor recommendation module
-Real-time report upload via mobile app
-Deployment on cloud platform
+## Technical Architecture & Stack
 
-Developed Under Guidance
-Sai Satish Sir
-Indian Servers
+### Frontend & UI Layer
+* **Streamlit (Python):** Powers the reactive single-page dashboard application, handling state management (st.session_state) and view switches seamlessly.
+* **CSS3 Custom Injections:** Overrides base components to deliver a premium, scannable Bento-Grid layout system with high-visibility hazard highlighting.
 
-License
-This project is for educational and demonstration purposes.
+### Artificial Intelligence Core
+* **Primary Engine:** Google Gemini 2.5 Flash via the modern Google GenAI SDK for ultra-fast, multi-modal layout and text processing.
+* **Resilient Fallback Pipeline:** Integrated Gemini 2.0 Flash automated lane routing to guarantee application uptime if primary API limits or timeouts hit.
 
+### Data & Operations Layer
+* **SQLite3:** A completely lightweight, local relational database that securely handles session logging, data persistence, and historical retrieval.
+* **Pillow (PIL):** Validates and processes incoming raw image files before network pipeline transmission.
+* **Python Native re (Regex):** Deterministically parses the model's structured payload into dedicated UI dashboard blocks.
 
+---
+
+## Repository Structure
+
+```text
+├── app.py                  # Main Streamlit Application Entrypoint
+├── silvercare_records.db   # Local SQLite3 Relational Database 
+├── requirements.txt        # Python External Dependencies Configuration
+└── README.md               # System Documentation (This file)
