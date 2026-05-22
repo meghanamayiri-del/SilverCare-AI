@@ -6,6 +6,15 @@ Instead of relying on fragile, error-prone traditional OCR systems, SilverCare A
 
 ---
 
+
+## Application Preview
+
+### Main Insights Dashboard
+![SilverCare AI Dashboard Interface](scrennshot.png)
+
+
+---
+
 ## Key Features
 
 * **AI Report Analyzer (Powered by Google Gemini)**
